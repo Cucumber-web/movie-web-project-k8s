@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-back
+  name: back-end
 spec:
   selector:
     matchLabels:
-      app: test-back
+      app: back-end
   replicas: 2
   template:
     metadata:
       labels:
-        app: test-back
+        app: back-end
     spec:
       nodeName: cnp-node-w-1vmd
       containers:
-      - name: test-back
+      - name: back-end
         image: uh2959/cucumber-back:13
         resources:
           limits:
