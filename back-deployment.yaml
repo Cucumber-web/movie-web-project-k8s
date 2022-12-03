@@ -18,7 +18,7 @@ spec:
         image: uh2959/cucumber-back:13
         resources:
           limits:
-            memory: "128Mi"
+            memory: "512Mi"
             cpu: "250m"
         ports:
         - containerPort: 8080
