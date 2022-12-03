@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test-back
-        image: uh2959/cucumber-back:12
+        image: uh2959/cucumber-back:13
         resources:
           limits:
             memory: "128Mi"
