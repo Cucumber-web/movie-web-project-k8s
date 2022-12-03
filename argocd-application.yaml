@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cucumovie-main-app
+spec:
+  project: default
+  destination:
+    namespace: cucumovie-main
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/Cucumber-web/movie-web-project-k8s
+    path: .
+    targetRevision: main
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
