@@ -20,21 +20,21 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "250m"
-      env:
-        - name: MYSQL_USER
-          valueFrom:
-            secretKeyRef:
-              name: mysql-secret
-              key: username
-        - name: MYSQL_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-secret
-              key: password
-        - name: MYSQL_DB_HOST
-          valueFrom:
-            secretKeyRef:
-              name: mysql-secret
-              key: host
-          ports:
-          - containerPort: 8080
+        env:
+          - name: MYSQL_USER
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: username
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: password
+          - name: MYSQL_DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: mysql-secret
+                key: host
+            ports:
+            - containerPort: 8080
