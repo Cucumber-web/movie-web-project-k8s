@@ -36,5 +36,7 @@ spec:
             secretKeyRef:
               name: mysql-secret
               key: host
+        - name: MYSQL_DATABASE
+          value: movie
         ports:
         - containerPort: 8080
