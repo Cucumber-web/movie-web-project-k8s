@@ -15,7 +15,7 @@ spec:
       nodeName: cnp-node-w-1vmd
       containers:
       - name: back-end
-        image: uh2959/cucumber-back:37
+        image: uh2959/cucumber-back:38
         resources:
           limits:
             memory: "512Mi"
