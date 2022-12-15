@@ -15,7 +15,7 @@ spec:
       nodeName: cnp-node-w-1vme
       containers:
       - name: front-end
-        image: uh2959/cucumber-front:50
+        image: uh2959/cucumber-front:51
         resources:
           limits:
             memory: "128Mi"
