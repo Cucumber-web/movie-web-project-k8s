@@ -6,11 +6,13 @@ spec:
   selector:
     matchLabels:
       app: back-end
+      tier: back
   replicas: 2
   template:
     metadata:
       labels:
         app: back-end
+        tier: back
     spec:
       nodeName: cnp-node-w-1vmd
       containers:
