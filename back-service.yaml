@@ -6,6 +6,7 @@ spec:
   type: ClusterIP
   selector:
     app: back-end
+    tier: back
   ports:
   - port: 80
     targetPort: 8080
