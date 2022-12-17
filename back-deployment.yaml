@@ -15,7 +15,6 @@ spec:
         tier: back
     spec:
       nodeName: cnp-node-w-1vmd
-      revisionHistoryLimit: 2
       containers:
       - name: back-end
         image: uh2959/cucumber-back:59
