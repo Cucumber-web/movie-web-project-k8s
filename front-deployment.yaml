@@ -15,6 +15,7 @@ spec:
         tier: front
     spec:
       nodeName: cnp-node-w-1vme
+      revisionHistoryLimit: 2
       containers:
       - name: front-end
         image: uh2959/cucumber-front:65
