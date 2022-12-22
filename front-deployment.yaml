@@ -18,9 +18,9 @@ spec:
       containers:
       - name: front-end
         image: uh2959/cucumber-front:74
+        ports:
+          - containerPort: 80
         resources:
           limits:
             memory: "128Mi"
             cpu: "250m"
-        ports:
-        - containerPort: 80

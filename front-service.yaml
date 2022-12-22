@@ -6,6 +6,8 @@ spec:
   type: LoadBalancer
   selector:
     app: front-end
+    tier: front
   ports:
-  - port: 80
-    targetPort: 80
+    - protocol: TCP
+      port: 80
+      targetPort: 80
