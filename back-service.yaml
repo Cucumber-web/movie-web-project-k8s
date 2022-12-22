@@ -8,5 +8,5 @@ spec:
     app: back-end
     tier: back
   ports:
-  - port: 80
+  - port: 8080
     targetPort: 8080
