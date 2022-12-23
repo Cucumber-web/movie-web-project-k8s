@@ -17,7 +17,7 @@ spec:
       nodeName: cnp-node-w-1vmd
       containers:
       - name: back-end
-        image: uh2959/cucumber-back:77
+        image: uh2959/cucumber-back:78
         ports:
           - containerPort: 8080
         resources:
