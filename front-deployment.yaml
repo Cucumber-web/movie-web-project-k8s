@@ -17,7 +17,7 @@ spec:
       nodeName: cnp-node-w-1vme
       containers:
       - name: front-end
-        image: uh2959/cucumber-front:81
+        image: uh2959/cucumber-front:82
         ports:
           - containerPort: 80
         resources:
